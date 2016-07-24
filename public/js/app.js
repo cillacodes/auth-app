@@ -1,9 +1,10 @@
 var AuthApp = angular.module('AuthApp', ['ui.router'])
-AuthApp.config(function($stateProvider, $urlRouterProvider) {
+AuthApp.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
+  $locationProvider.html5Mode(true)
+
   // For any unmatched url, redirect to /state1
   $urlRouterProvider.otherwise("/state1")
-
-  console.log("setting up all this shit")
+  
   $stateProvider
     .state('state1', {
       url: "/state1",
@@ -28,6 +29,3 @@ AuthApp.config(function($stateProvider, $urlRouterProvider) {
       }
     })
 })
-
-console.log('wtf'
-)
