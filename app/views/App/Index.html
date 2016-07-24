@@ -1,21 +1,11 @@
 {{set . "title" "Home"}}
 {{template "header.html" .}}
 
-<header class="jumbotron" style="background-color:#A9F16C">
-  <div class="container">
-    <div class="row">
-      <h1>It works!</h1>
-      <p></p>
-    </div>
-  </div>
-</header>
+<div ui-view></div>
+<a ui-sref="state1">State 1</a>
+<a ui-sref="state2">State 2</a>
 
-<div class="container">
-  <div class="row">
-    <div class="span6">
-      {{template "flash.html" .}}
-    </div>
-  </div>
-</div>
-
+{{ append . "moreScripts" "lib/angular/angular.min.js" }}
+{{ append . "moreScripts" "lib/angular-ui-router/release/angular-ui-router.min.js" }}
+{{ append . "moreScripts" "js/app.js" }}
 {{template "footer.html" .}}
