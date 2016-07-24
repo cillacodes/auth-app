@@ -1,0 +1,23 @@
+{
+  "name": "auth-app",
+  "homepage": "https://github.com/cillacodes/auth-app",
+  "authors": [
+    "Seth Bonnie <sethkbonnie@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-ui-router": "^0.3.1"
+  }
+}

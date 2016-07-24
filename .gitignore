@@ -1,0 +1,6 @@
+test-results/
+tmp/
+routes/
+
+# 3rd party client-side dependencies
+public/lib
